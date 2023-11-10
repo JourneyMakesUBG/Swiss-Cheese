@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiss Cheese</title>
+    <style>
+      body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
+
+      header {
+        background-color: darkgrey;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      button {
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <button onclick="navigateToProxies()">Proxies</button>
+      <button onclick="scrollToSection('yourSectionId')">Games</button>
+      <button onclick="scrollToSection('yourSectionId')">Cheating Tools</button>
+    </header>
+    <section id="yourSectionId">
+      <h2>Swiss Cheese Home</h2>
+      <p>This is the replacement website for the "Websites for school" spreadsheet, R.I.P.</p>
+    </section>
+    <!-- New section with an image -->
+    <section id="imageSection">
+      <img src="Swiss.png" alt="Swiss Cheese">
+    </section>
+    <!-- Add more sections and content as needed -->
+    <section id="yourSectionId">
+      <h2>Credits</h2>
+      <p>JourneyMan, PkmnTrainerJoey</p>
+    </section>
+    <script>
+      function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+
+      function navigateToProxies() {
+        window.location.href = 'proxies.html';
+      }
+    </script>
+  </body>
+</html>
