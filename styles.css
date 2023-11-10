@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.tight-text {
+    line-height: 0.1;
+    margin: 5px;
+}
+
+header {
+    background-color: darkgrey;
+    padding: 1px;
+    text-align: center;
+}
+
+h2,
+p {
+    padding: 0;
+}
